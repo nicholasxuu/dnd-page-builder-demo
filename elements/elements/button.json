@@ -1,0 +1,55 @@
+{
+    "meta": {
+        "name": "Button",
+        "img": "/img/button.png"
+    },
+    "props": {
+        "component": "MustacheTemplatedElement",
+        "template": "<button id=\"{{id}}\" name=\"{{name}}\"{{#disabled}} disabled{{/disabled}} style=\"{{#width}}width:{{width}};{{/width}}{{#height}}height:{{height}};{{/height}}\" type=\"button\" class=\"btn btn-default {{sizing}}\" aria-label=\"{{aria-label}}\">{{text}}</button>"
+    },
+    "options": [
+        {
+            "field": "id",
+            "type": "text",
+            "distinct": true,
+            "default": ""
+        },
+        {
+            "field": "name",
+            "type": "text",
+            "default": ""
+        },
+        {
+            "field": "text",
+            "type": "text",
+            "default": "Button"
+        },
+        {
+            "field": "disabled",
+            "type": "bool",
+            "default": false
+        },
+        {
+            "field": "width",
+            "type": "text",
+            "default": ""
+        },
+        {
+            "field": "height",
+            "type": "text",
+            "default": ""
+        },
+        {
+            "field": "sizing",
+            "type": "select",
+            "default": "",
+            "options": {
+                "large": "btn-lg",
+                "regular": "",
+                "small": "btn-sm",
+                "tiny": "btn-xs"
+            }
+        }
+    ],
+    "type": "button"
+}

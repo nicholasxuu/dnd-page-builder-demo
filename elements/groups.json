@@ -1,0 +1,25 @@
+[
+  {
+    "name": "Layouts",
+    "elements": [
+      "multiColumn1",
+      "multiColumn2",
+      "multiColumn3",
+      "multiColumn221",
+      "multiColumn3231"
+    ]
+  },
+  {
+    "name": "Form Elements",
+    "elements": [
+      "textInput",
+      "passwordInput",
+      "checkbox",
+      "radio",
+      "button",
+      "select",
+      "alertButton"
+    ]
+  }
+]
+

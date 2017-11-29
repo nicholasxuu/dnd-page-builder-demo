@@ -1,0 +1,32 @@
+{
+    "meta": {
+        "name": "Dual Column Container",
+        "img": "/img/multiColumn2.png"
+    },
+    "props": {
+        "component": "MultiColumnElement",
+        "columns": [
+            [
+                {
+                    "className": "col-md-6"
+                },
+                {
+                    "className": "col-md-6"
+                }
+            ]
+        ],
+        "children": [
+            [
+                {
+                    "component": "Grid2DContainer",
+                    "children": []
+                },
+                {
+                    "component": "Grid2DContainer",
+                    "children": []
+                }
+            ]
+        ]
+    },
+    "type": "multiColumn2"
+}

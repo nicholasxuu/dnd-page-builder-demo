@@ -1,0 +1,36 @@
+{
+    "meta": {
+        "name": "Single Column Container",
+        "img": "/img/multiColumn1.png"
+    },
+    "props": {
+        "component": "JSONReactElement",
+        "children": [[
+            {
+                "component": "Grid2DContainer",
+                "children": []
+            }
+        ]],
+        "element": {
+            "type": "div",
+            "props": {
+                "className": "row"
+            },
+            "children": [
+                {
+                    "type": "div",
+                    "props": {
+                        "className": "col-md-12"
+                    },
+                    "children": [
+                        {
+                            "type": "Child",
+                            "index": [0, 0]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "type": "multiColumn1"
+}

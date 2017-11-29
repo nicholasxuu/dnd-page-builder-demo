@@ -1,0 +1,64 @@
+{
+    "meta": {
+        "name": "Text Input",
+        "img": "/img/textInput.png"
+    },
+    "props": {
+        "component": "MustacheTemplatedElement",
+        "template": "{{#inline}}<span class=\"form-inline\">{{/inline}}<label for=\"{{id}}\" class=\"{{#hideLabel}}sr-only{{/hideLabel}}\">{{label}}</label><input type=\"text\" class=\"form-control\" id=\"{{id}}\" name=\"{{name}}\" value=\"{{value}}\" style=\"{{#width}}width:{{width}};{{/width}}max-width:100%;\" placeholder=\"{{placeholder}}\"{{#disabled}} disabled{{/disabled}}{{#readOnly}} readOnly{{/readOnly}}/>{{#inline}}</span>{{/inline}}"
+    },
+    "options": [
+        {
+            "field": "id",
+            "type": "text",
+            "distinct": true,
+            "default": ""
+        },
+        {
+            "field": "name",
+            "type": "text",
+            "default": ""
+        },
+        {
+            "field": "label",
+            "type": "text",
+            "default": "Text Input"
+        },
+        {
+            "field": "value",
+            "type": "text",
+            "default": ""
+        },
+        {
+            "field": "inline",
+            "type": "bool",
+            "default": true
+        },
+        {
+            "field": "readOnly",
+            "type": "bool",
+            "default": false
+        },
+        {
+            "field": "disabled",
+            "type": "bool",
+            "default": false
+        },
+        {
+            "field": "width",
+            "type": "text",
+            "default": ""
+        },
+        {
+            "field": "placeholder",
+            "type": "text",
+            "default": ""
+        },
+        {
+            "field": "hideLabel",
+            "type": "bool",
+            "default": false
+        }
+    ],
+    "type": "textInput"
+}

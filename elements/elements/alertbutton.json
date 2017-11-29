@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "name": "Alert Button",
+    "img": "/img/alertButton.png"
+  },
+  "props": {
+    "component": "MustacheTemplatedElement",
+    "template": "<style>.alert-button {background-color: #E3E1B8;}</style><script type=\"text/javascript\">\n function onClick{{id}}(){ alert('{{alertMessage}}'); }\n</script><button id=\"{{id}}\" name=\"{{name}}\"{{#disabled}} disabled{{/disabled}} style=\"{{#width}}width:{{width}};{{/width}}{{#height}}height:{{height}};{{/height}}\" onclick=\"onClick{{id}}();\" type=\"button\" class=\"btn btn-default {{sizing}} alert-button\" aria-label=\"{{aria-label}}\">{{text}}</button>"
+  },
+  "options": [
+    {
+      "field": "id",
+      "type": "text",
+      "distinct": true,
+      "default": ""
+    },
+    {
+      "field": "name",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "field": "text",
+      "type": "text",
+      "default": "Alert Button"
+    },
+    {
+      "field": "alertMessage",
+      "type": "text",
+      "default": "helloworld"
+    },
+    {
+      "field": "disabled",
+      "type": "bool",
+      "default": false
+    },
+    {
+      "field": "width",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "field": "height",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "field": "sizing",
+      "type": "select",
+      "default": "",
+      "options": {
+        "large": "btn-lg",
+        "regular": "",
+        "small": "btn-sm",
+        "tiny": "btn-xs"
+      }
+    }
+  ],
+  "type": "alertButton"
+}

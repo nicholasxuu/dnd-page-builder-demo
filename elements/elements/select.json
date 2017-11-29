@@ -1,0 +1,77 @@
+{
+    "meta": {
+        "name": "Select",
+        "img": "/img/select.png"
+    },
+    "props": {
+        "component": "MustacheTemplatedElement",
+        "template": "<div class=\"{{#inline}}form-inline{{/inline}}\"><label for=\"{{id}}\" class=\"{{#hideLabel}}sr-only{{/hideLabel}}\">{{label}}</label><select id=\"{{id}}\" name=\"{{name}}\"{{#disabled}} disabled{{/disabled}} style=\"{{#width}}width:{{width}};{{/width}}\" class=\"form-control\"{{#multiSelect}} multiple{{/multiSelect}}>{{#options}}<option value={{value}}>{{text}}</option>{{/options}}</select></div>"
+    },
+    "options": [
+        {
+            "field": "id",
+            "type": "text",
+            "distinct": true,
+            "default": ""
+        },
+        {
+            "field": "name",
+            "type": "text",
+            "default": ""
+        },
+        {
+            "field": "label",
+            "type": "text",
+            "default": "Select Dropdown"
+        },
+        {
+            "field": "value",
+            "type": "text",
+            "default": ""
+        },
+        {
+            "field": "multiSelect",
+            "type": "bool",
+            "default": false
+        },
+        {
+            "field": "options",
+            "type": "map",
+            "template": {
+                "value": "",
+                "text": ""
+            },
+            "default": [
+                {
+                    "value": "option1",
+                    "text": "option no.1"
+                },
+                {
+                    "value": "option2",
+                    "text": "option no.2"
+                }
+            ]
+        },
+        {
+            "field": "width",
+            "type": "text",
+            "default": ""
+        },
+        {
+            "field": "inline",
+            "type": "bool",
+            "default": false
+        },
+        {
+            "field": "disabled",
+            "type": "bool",
+            "default": false
+        },
+        {
+            "field": "readOnly",
+            "type": "bool",
+            "default": false
+        }
+    ],
+    "type": "select"
+}

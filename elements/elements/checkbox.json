@@ -1,0 +1,54 @@
+{
+    "meta": {
+        "name": "Checkbox",
+        "img": "/img/checkbox.png"
+    },
+    "props": {
+        "component": "MustacheTemplatedElement",
+        "template": "<div class=\"{{#inline}}checkbox-inline{{/inline}}{{^inline}}checkbox{{/inline}}{{#disabled}} disabled{{/disabled}}\"><label><input type=\"checkbox\" id=\"{{id}}\" name=\"{{name}}\" value=\"{{value}}\"{{#checked}} checked{{/checked}}{{#disabled}} disabled{{/disabled}}{{#readOnly}} readOnly{{/readOnly}}>{{label}}</label></div>"
+    },
+    "options": [
+        {
+            "field": "id",
+            "type": "text",
+            "distinct": true,
+            "default": ""
+        },
+        {
+            "field": "name",
+            "type": "text",
+            "default": ""
+        },
+        {
+            "field": "label",
+            "type": "text",
+            "default": "Multiple Select Box"
+        },
+        {
+            "field": "value",
+            "type": "text",
+            "default": ""
+        },
+        {
+            "field": "inline",
+            "type": "bool",
+            "default": false
+        },
+        {
+            "field": "disabled",
+            "type": "bool",
+            "default": false
+        },
+        {
+            "field": "checked",
+            "type": "bool",
+            "default": false
+        },
+        {
+            "field": "readOnly",
+            "type": "bool",
+            "default": false
+        }
+    ],
+    "type": "checkbox"
+}
